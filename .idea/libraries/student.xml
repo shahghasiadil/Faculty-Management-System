@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="student">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/FacultyManagementSystem/com/faculty/fxcontrollers/student.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

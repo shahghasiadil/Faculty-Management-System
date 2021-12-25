@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1173.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.faculty.fxcontrollers.classes.EditClassesController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtClassName" maxWidth="250.0" promptText="Class Name" />
+            <JFXTimePicker fx:id="dtTime" defaultColor="#2d75e8" prefHeight="25.0" prefWidth="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXTimePicker>
+            <TextField fx:id="txtRoomNo" layoutX="101.0" layoutY="160.0" maxWidth="250.0" promptText="Room No" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <ToolBar prefHeight="50.0" prefWidth="1173.0" style="-fx-background-color: whitesmoke;" BorderPane.alignment="CENTER">
+         <items>
+            <JFXButton fx:id="backBtn" alignment="CENTER" buttonType="RAISED" onAction="#backBtnAction" prefHeight="30.0" prefWidth="56.0" style="-fx-background-color: #2D75E8;" text="Back" textFill="WHITE" translateX="10.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXButton>
+         </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <ToolBar prefHeight="44.0" prefWidth="1163.0" style="-fx-background-color: whitesmoke;" BorderPane.alignment="CENTER">
+         <items>
+            <JFXButton fx:id="saveBtn" buttonType="RAISED" onAction="#saveBtnAction" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #2D75E8;" text="Save" textFill="WHITE" translateX="10.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancelBtn" buttonType="RAISED" onAction="#cancelBtnAction" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #2D75E8;" stylesheets="@/com/faculty/css/fullpackstyling.css" text="Cancel" textFill="WHITE" translateX="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

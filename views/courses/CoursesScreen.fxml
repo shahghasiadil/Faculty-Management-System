@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1173.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.faculty.fxcontrollers.courses.CoursesController">
+   <children>
+      <Pane prefHeight="139.0" prefWidth="1102.0" style="-fx-background-color: #2D75E8;" AnchorPane.bottomAnchor="569.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="73.0" layoutY="30.0" text="Courses" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="91.0" text="Faculty Management System " textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tbData" layoutX="65.0" layoutY="192.0" prefHeight="349.0" prefWidth="970.0" stylesheets="/com/faculty/css/fullpackstyling.css" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="264.0">
+        <columns>
+          <TableColumn fx:id="clmCourseName" maxWidth="3500.0" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Course Name" />
+            <TableColumn fx:id="clmCourseCredit" maxWidth="3000.0" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Course Credit" />
+            <TableColumn fx:id="clmLecturer" prefWidth="-1.0" style="-fx-alignment: CENTER;" text="Lecturer" />
+            <TableColumn fx:id="clmSemester" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Semester" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="429.0" layoutY="169.0" onAction="#addBtnAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #2D75E8;" text="Add" textFill="WHITE" AnchorPane.leftAnchor="475.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="18" style="-fx-fill: White;" wrappingWidth="20.000000573694706" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="513.0" layoutY="169.0" onAction="#editBtnAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #2D75E8; -fx-font-weight: bold;" text="Edit" textFill="WHITE" AnchorPane.leftAnchor="575.0" AnchorPane.topAnchor="225.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="16" style="-fx-fill: WHITE;" wrappingWidth="20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="597.0" layoutY="169.0" onAction="#deleteBtnAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #2D75E8; -fx-font-weight: bold;" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="225.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="REMOVE" size="16" style="-fx-fill: white;" />
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="30.0" layoutY="31.0" onKeyReleased="#onSearchAction" prefHeight="32.0" prefWidth="390.0" promptText="Search" style="-fx-border-color: #2D75E8;" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="225.0" />
+      <FontAwesomeIconView fill="#2d75e8" glyphName="SEARCH&#10;" layoutX="386.0" layoutY="254.0" size="14" text="" AnchorPane.leftAnchor="432.0" AnchorPane.topAnchor="233.0" />
+   </children>
+</AnchorPane>

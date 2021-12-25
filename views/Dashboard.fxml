@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="765.0" maxWidth="1366.0" minHeight="500.0" minWidth="500.0" prefHeight="765.0" prefWidth="1366.0" stylesheets="@../src/com/faculty/css/fullpackstyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.faculty.fxcontrollers.DashboardController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="599.0" prefWidth="193.0" style="-fx-background-color: #2D75E8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="174.0" prefWidth="193.0" translateY="-10.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="65.0" layoutY="74.0" size="60" wrappingWidth="64.0" />
+                  <Label layoutX="1.0" layoutY="77.0" prefHeight="61.0" prefWidth="193.0" style="-fx-font-weight: bold; -fx-alignment: center;" text="Faculty Management System" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnStudents" buttonType="RAISED" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLecturers" buttonType="RAISED" layoutX="10.0" layoutY="210.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Lecturers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClasses" buttonType="RAISED" layoutX="10.0" layoutY="245.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Classes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSemesters" buttonType="RAISED" layoutX="10.0" layoutY="280.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Semesters" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCourses" buttonType="RAISED" layoutX="10.0" layoutY="315.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Courses" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRegisteration" buttonType="RAISED" layoutX="10.0" layoutY="350.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Registeration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSchedules" buttonType="RAISED" layoutX="10.0" layoutY="409.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Schedules" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAttendance" buttonType="RAISED" layoutX="10.0" layoutY="350.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Attendance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnExaminations" buttonType="RAISED" layoutX="10.0" layoutY="444.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Examination" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMarks" buttonType="RAISED" layoutX="10.0" layoutY="420.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Marks" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnComplains" buttonType="RAISED" layoutX="10.0" layoutY="455.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Complains" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUsers" buttonType="RAISED" layoutX="10.0" layoutY="585.0" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="195.0" text="Users" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="10.0" layoutY="525.0" onAction="#handleButtonClicks" prefHeight="49.0" prefWidth="193.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="homeRoot" layoutX="50.0" layoutY="-49.0" prefHeight="768.0" prefWidth="1173.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></AnchorPane>
+   </children>
+</AnchorPane>
