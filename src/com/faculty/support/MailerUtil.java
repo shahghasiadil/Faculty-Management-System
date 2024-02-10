@@ -23,7 +23,7 @@ public class MailerUtil {
         smtpServer = "smtp.gmail.com";
         smtpPort = 587;
         username =  "shaghasy555@gmail.com";
-        secret = "yjcozajityvjnggk";
+        secret = "";
         sender = "App Name";
         transportStrategy = TransportStrategy.SMTP_TLS;
         debugLogging = true;
